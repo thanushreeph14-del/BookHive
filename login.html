@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | BookHive</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="index.html" class="logo">Book<span>Hive</span></a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="active">Login</a>
+            <a href="cart.html" class="cart-link">My Cart</a>
+        </nav>
+    </header>
+
+    <!-- Login Page -->
+    <main class="auth-page">
+
+        <section class="auth-card">
+
+            <div class="auth-heading">
+                <div class="auth-icon">📚</div>
+                <p class="eyebrow">WELCOME BACK</p>
+                <h1>Login to BookHive</h1>
+                <p>Continue discovering your next favourite book.</p>
+            </div>
+
+            <form action="#" method="get">
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        autocomplete="email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        required
+                        minlength="6">
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-option">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="contact.html" class="forgot-link">
+                        Forgot password?
+                    </a>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <p class="auth-switch">
+                Don't have an account?
+                <a href="signup.html">Create an account</a>
+            </p>
+
+            <p class="auth-terms">
+                By continuing, you agree to our terms and privacy policy.
+            </p>
+
+        </section>
+
+        <div class="auth-back">
+            <a href="books.html">← Back to browsing books</a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <a href="index.html" class="logo footer-logo">
+                    Book<span>Hive</span>
+                </a>
+                <p>Your little corner of the world for books and knowledge.</p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Account</h3>
+                <a href="login.html">Login</a>
+                <a href="signup.html">Create Account</a>
+                <a href="cart.html">My Cart</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 BookHive. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Books | BookHive</title>
+
+    <meta name="description"
+          content="Explore books at BookHive and discover your next favourite read.">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                Book<span>Hive</span>
+            </a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="books.html" class="active">Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cart.html" class="cart-link">Cart</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- =========================
+             PAGE BANNER
+        ========================== -->
+        <section class="page-banner">
+            <div class="container">
+
+                <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+
+                <h1>Explore Our Books</h1>
+
+                <p>
+                    Discover inspiring stories, exciting adventures
+                    and knowledge that opens new doors.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             AI BOOK FINDER
+        ========================== -->
+        <section class="ai-finder-section">
+            <div class="container">
+
+                <div class="ai-finder-card">
+
+                    <!-- AI Form -->
+                    <div class="ai-finder-content">
+
+                        <span class="ai-badge">
+                            ✦ BOOKHIVE AI
+                        </span>
+
+                        <h2>Find Your Next Favourite Book</h2>
+
+                        <p>
+                            Not sure what to read next? Tell us about
+                            your interests, mood and reading goals to
+                            explore reading recommendations.
+                        </p>
+
+                        <form class="ai-finder-form"
+                              action="#ai-recommendations"
+                              method="get">
+
+                            <label for="reading-interest">
+                                What would you love to read about?
+                            </label>
+
+                            <input
+                                type="text"
+                                id="reading-interest"
+                                name="interest"
+                                placeholder="e.g. motivation, technology, adventure"
+                                required
+                            >
+
+                            <label for="reading-mood">
+                                Choose your reading mood
+                            </label>
+
+                            <select id="reading-mood" name="mood" required>
+                                <option value="">Select your mood</option>
+                                <option value="motivated">Motivated</option>
+                                <option value="curious">Curious</option>
+                                <option value="relaxed">Relaxed</option>
+                                <option value="adventurous">Adventurous</option>
+                            </select>
+
+                            <label for="reading-goal">
+                                What is your reading goal?
+                            </label>
+
+                            <select id="reading-goal" name="goal" required>
+                                <option value="">Select your goal</option>
+                                <option value="learning">Learn something new</option>
+                                <option value="entertainment">Enjoy a good story</option>
+                                <option value="self-growth">Personal growth</option>
+                                <option value="career">Improve career skills</option>
+                            </select>
+
+                            <button type="submit" class="ai-finder-button">
+                                ✦ Discover My Books
+                            </button>
+
+                        </form>
+
+                        <p class="ai-note">
+                            Discover books that inspire your next chapter.
+                        </p>
+
+                    </div>
+
+
+                    <!-- AI Visual -->
+                    <div class="ai-finder-visual">
+
+                        <div class="ai-orbit orbit-one"></div>
+                        <div class="ai-orbit orbit-two"></div>
+
+                        <div class="ai-book-symbol">
+                            📚
+                        </div>
+
+                        <div class="ai-floating-card floating-card-one">
+                            <span>✦</span>
+                            <div>
+                                <strong>Made for you</strong>
+                                <small>Discover new possibilities</small>
+                            </div>
+                        </div>
+
+                        <div class="ai-floating-card floating-card-two">
+                            <span>💡</span>
+                            <div>
+                                <strong>Explore ideas</strong>
+                                <small>Find your next inspiration</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             BOOK CATEGORIES
+        ========================== -->
+        <section class="categories-section section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">EXPLORE BY INTEREST</p>
+                    <h2>Discover Your Favourite Genre</h2>
+                    <p>
+                        Find your next read from our collection
+                        of different genres.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <a href="#fiction" class="category-card">
+                        <span class="category-icon">📖</span>
+                        <h3>Fiction</h3>
+                        <p>Stories that spark imagination.</p>
+                    </a>
+
+                    <a href="#self-help" class="category-card">
+                        <span class="category-icon">🌱</span>
+                        <h3>Self-Help</h3>
+                        <p>Ideas for personal growth.</p>
+                    </a>
+
+                    <a href="#biography" class="category-card">
+                        <span class="category-icon">👤</span>
+                        <h3>Biography</h3>
+                        <p>Learn from inspiring lives.</p>
+                    </a>
+
+                    <a href="#technology" class="category-card">
+                        <span class="category-icon">💻</span>
+                        <h3>Technology</h3>
+                        <p>Explore innovation and ideas.</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             BOOK CATALOGUE
+        ========================== -->
+        <section class="catalogue-section section-padding">
+            <div class="container">
+
+                <div class="section-heading catalogue-heading">
+                    <p class="eyebrow">THE BOOKHIVE COLLECTION</p>
+                    <h2>Explore Our Collection</h2>
+                    <p>
+                        Browse our selection and find a book
+                        that interests you.
+                    </p>
+                </div>
+
+
+                <!-- Category Navigation -->
+                <div class="filter-list">
+                    <a href="#all-books" class="filter-chip">All Books</a>
+                    <a href="#fiction" class="filter-chip">Fiction</a>
+                    <a href="#self-help" class="filter-chip">Self-Help</a>
+                    <a href="#biography" class="filter-chip">Biography</a>
+                    <a href="#technology" class="filter-chip">Technology</a>
+                </div>
+
+
+                <!-- All Books -->
+                <div class="book-grid" id="all-books">
+
+
+                    <!-- Book 1 -->
+                    <article class="book-card" id="biography">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9788173711466-L.jpg"
+                                alt="Wings of Fire book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Biography</span>
+
+                            <h3>
+                                <a href="book.html">Wings of Fire</a>
+                            </h3>
+
+                            <p class="book-author">A. P. J. Abdul Kalam</p>
+
+                            <p class="book-description">
+                                An inspiring autobiography about dreams,
+                                determination and scientific achievement.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹250</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 2 -->
+                    <article class="book-card" id="self-help">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780735211292-L.jpg"
+                                alt="Atomic Habits book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Self-Help</span>
+
+                            <h3>
+                                <a href="book.html">Atomic Habits</a>
+                            </h3>
+
+                            <p class="book-author">James Clear</p>
+
+                            <p class="book-description">
+                                Discover practical ideas for building
+                                better habits and improving every day.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹399</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 3 -->
+                    <article class="book-card" id="fiction">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780061120084-L.jpg"
+                                alt="To Kill a Mockingbird book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Fiction</span>
+
+                            <h3>
+                                <a href="book.html">To Kill a Mockingbird</a>
+                            </h3>
+
+                            <p class="book-author">Harper Lee</p>
+
+                            <p class="book-description">
+                                A memorable novel exploring justice,
+                                compassion and human understanding.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹299</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 4 -->
+                    <article class="book-card" id="technology">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780132350884-L.jpg"
+                                alt="Clean Code book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Technology</span>
+
+                            <h3>
+                                <a href="book.html">Clean Code</a>
+                            </h3>
+
+                            <p class="book-author">Robert C. Martin</p>
+
+                            <p class="book-description">
+                                Learn principles for writing readable,
+                                maintainable and organised software.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹550</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 5 -->
+                    <article class="book-card">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780141439518-L.jpg"
+                                alt="Pride and Prejudice book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Fiction</span>
+
+                            <h3>
+                                <a href="book.html">Pride and Prejudice</a>
+                            </h3>
+
+                            <p class="book-author">Jane Austen</p>
+
+                            <p class="book-description">
+                                A classic story about relationships,
+                                first impressions and society.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹220</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 6 -->
+                    <article class="book-card">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780743273565-L.jpg"
+                                alt="The Great Gatsby book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Fiction</span>
+
+                            <h3>
+                                <a href="book.html">The Great Gatsby</a>
+                            </h3>
+
+                            <p class="book-author">F. Scott Fitzgerald</p>
+
+                            <p class="book-description">
+                                A classic novel about ambition,
+                                wealth and the American dream.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹199</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 7 -->
+                    <article class="book-card">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780747532743-L.jpg"
+                                alt="Harry Potter and the Philosopher's Stone book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Fiction</span>
+
+                            <h3>
+                                <a href="book.html">
+                                    Harry Potter and the Philosopher's Stone
+                                </a>
+                            </h3>
+
+                            <p class="book-author">J. K. Rowling</p>
+
+                            <p class="book-description">
+                                Enter a magical world full of friendship,
+                                mystery and adventure.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹350</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- Book 8 -->
+                    <article class="book-card">
+
+                        <a href="book.html" class="book-image-link">
+                            <img
+                                src="https://covers.openlibrary.org/b/isbn/9780451524935-L.jpg"
+                                alt="1984 book cover"
+                                class="book-cover"
+                                loading="lazy"
+                            >
+                        </a>
+
+                        <div class="book-info">
+
+                            <span class="book-category">Fiction</span>
+
+                            <h3>
+                                <a href="book.html">1984</a>
+                            </h3>
+
+                            <p class="book-author">George Orwell</p>
+
+                            <p class="book-description">
+                                A thought-provoking dystopian novel
+                                about freedom, truth and control.
+                            </p>
+
+                            <div class="book-card-bottom">
+                                <span class="book-price">₹240</span>
+                                <a href="book.html" class="btn btn-primary">
+                                    View Book
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =========================
+             AI SAMPLE RECOMMENDATIONS
+        ========================== -->
+        <section class="ai-similar-section section-padding"
+                 id="ai-recommendations">
+
+            <div class="container">
+
+                <div class="ai-similar-header">
+
+                    <span class="ai-badge">✦ BOOKHIVE AI</span>
+
+                    <h2>Explore Books by Your Interests</h2>
+
+                    <p>
+                        Looking for inspiration, knowledge or a new
+                        adventure? Start with these curated reading ideas.
+                    </p>
+
+                </div>
+
+                <div class="ai-similar-grid">
+
+                    <article class="ai-similar-card">
+
+                        <div class="similar-book-icon">🚀</div>
+
+                        <span class="similar-category">INSPIRATION</span>
+
+                        <h3>For Big Dreams</h3>
+
+                        <p>
+                            Explore biographies and motivational reads
+                            about perseverance, ambition and success.
+                        </p>
+
+                        <div class="similar-match">
+                            ✦ Suggested for motivation and personal growth
+                        </div>
+
+                        <a href="#biography" class="similar-link">
+                            Explore Biography Books →
+                        </a>
+
+                    </article>
+
+
+                    <article class="ai-similar-card">
+
+                        <div class="similar-book-icon">💻</div>
+
+                        <span class="similar-category">TECHNOLOGY</span>
+
+                        <h3>For Curious Minds</h3>
+
+                        <p>
+                            Discover books about programming, problem
+                            solving and building technical knowledge.
+                        </p>
+
+                        <div class="similar-match">
+                            ✦ Suggested for technology enthusiasts
+                        </div>
+
+                        <a href="#technology" class="similar-link">
+                            Explore Technology Books →
+                        </a>
+
+                    </article>
+
+
+                    <article class="ai-similar-card">
+
+                        <div class="similar-book-icon">🌱</div>
+
+                        <span class="similar-category">SELF-GROWTH</span>
+
+                        <h3>For a Better You</h3>
+
+                        <p>
+                            Explore reading ideas about developing
+                            habits, learning and improving yourself.
+                        </p>
+
+                        <div class="similar-match">
+                            ✦ Suggested for self-improvement
+                        </div>
+
+                        <a href="#self-help" class="similar-link">
+                            Explore Self-Help Books →
+                        </a>
+
+                    </article>
+
+                </div>
+
+                <p class="ai-similar-disclaimer">
+                    These are curated sample recommendations.
+                    Live AI-generated results are not enabled in this
+                    HTML and CSS version.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CALL TO ACTION
+        ========================== -->
+        <section class="promo-section">
+            <div class="container">
+
+                <div class="promo-content">
+                    <p class="eyebrow">YOUR NEXT CHAPTER</p>
+
+                    <h2>Every Great Journey Begins with a Book</h2>
+
+                    <p>
+                        Explore new ideas, discover different worlds
+                        and find a story worth remembering.
+                    </p>
+
+                    <a href="about.html" class="btn btn-light">
+                        About BookHive
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+                <a href="index.html" class="logo">
+                    Book<span>Hive</span>
+                </a>
+
+                <p>Your next chapter begins here.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="books.html">Books</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 BookHive. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+</body>
+</html>
